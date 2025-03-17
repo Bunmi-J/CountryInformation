@@ -1,0 +1,6 @@
+pandas
+seaborn
+matplotlib
+requests 
+ beautifulsoup4-4.13.3
+ sqlalchemy

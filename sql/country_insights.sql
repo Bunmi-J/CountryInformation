@@ -1,4 +1,4 @@
--- How many countries speaks French
+-- -- How many countries speaks French
 SELECT COUNT(name_common) as FrenchSpeaking FROM [dbo].[RESTCountry2]
 WHERE fra = 'French'
 
