@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt 
 from sqlalchemy import create_engine
-from config import DB_USERNAME, DB_PASSWORD
+from config import DB_USERNAME, DB_PASSWORD, DB_NAME
 
 
 def language_field(data):
@@ -216,8 +216,7 @@ except KeyError as err:
 
 # Azure SQL Server connection string
 connection_string = (
-    'mssql+pyodbc://DB_USERNAME:DB_PASSWORD@ofgemsample.database.windows.net/'
-    'Copydatagit?driver=ODBC+Driver+18+for+SQL+Server'
+    'mssql+pyodbc://DB_USERNAME:DB_PASSWORD@DB_NAME?driver=ODBC+Driver+18+for+SQL+Server'
 )
 
 # Create SQLAlchemy engine to connect to Azure SQL Server
